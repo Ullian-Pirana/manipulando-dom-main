@@ -1,0 +1,47 @@
+.faq dt{
+    font-size: 1.5rem;
+    color: #814813;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #d8d8d8;
+    cursor: pointer;
+}
+.faq dt::after{
+    content: '\25BC';
+    font-size: 0.985rem;
+    padding: 10px;
+}
+
+.faq dd{
+    font-size: 1.1rem;
+    color: #626262;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+
+}
+
+.js-accordion dd{
+    display: none;
+}
+
+.js-accordion dt.active::after{
+    content: '\25B2';
+    
+}
+
+.js-accordion dd.active{
+    display: block;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

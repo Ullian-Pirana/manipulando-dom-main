@@ -1,0 +1,9 @@
+.footer{
+    max-width: 1200px;
+    margin-left: auto;
+    background-color: #2fa97c;
+    margin-bottom:2rem;
+    margin-top: 2rem;
+    padding: 20px;
+    color: #fff;
+}
